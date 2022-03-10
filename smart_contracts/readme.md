@@ -1,0 +1,1 @@
+This is a smart contract for OrgAsset launched later.

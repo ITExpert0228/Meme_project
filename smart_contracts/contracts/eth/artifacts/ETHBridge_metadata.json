@@ -1,0 +1,298 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "date",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					},
+					{
+						"indexed": true,
+						"internalType": "enum BaseBridge.Step",
+						"name": "step",
+						"type": "uint8"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "processedNonces",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/eth/ETHBridge.sol": "ETHBridge"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/base/BaseBridge.sol": {
+			"keccak256": "0x35cc19708ba73922975a9abbc39cf950df2f433140e017bdef9efd504000dd56",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6850e31e6e3ec75c703667150f660570110cc6ae43141daa3c0748653827739d",
+				"dweb:/ipfs/QmR19zmFxE4vHhFm7uMTf7ft9fTm92bRnDWR7xSYURKJyh"
+			]
+		},
+		"contracts/eth/ETHBridge.sol": {
+			"keccak256": "0x66500609330d3c49561456ddd277778f8dcd80102db2c1933a6bd57a2424a8b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37c288da85e85fc4576f7fbd76ae8eec7fe790b212be533eb2a1778ad074273b",
+				"dweb:/ipfs/QmbpQoo3GkVKSKAhHvibtdJEbo2PNYCCumzRRNSyuQh1Fz"
+			]
+		},
+		"contracts/interface/IToken.sol": {
+			"keccak256": "0x78daa3da387c4ecd81ee791bbb9caa4975205b7a8b4fe85fddf5c112a0cd2712",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://31cb7070a51f4971618f73933f44f3dfcef8bcddc55ca1bb3fe2e1a2666c1cd2",
+				"dweb:/ipfs/QmUPHdRiV7cma7Z7MR8NvGSBfkxwXKTtK9qhaEMVyzFoHh"
+			]
+		},
+		"contracts/utils/Context.sol": {
+			"keccak256": "0x2908f5e74ac4ad3fa3addf918d034f71b9686dac1c4506b228d7db5456bd3307",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b32a01f8a0b445a34582e90d76d4843ea2c8436cad7e1c5856986727aa460564",
+				"dweb:/ipfs/QmRxMXPXTB6dw1neMVSxciixepfmz4HvEBaqRxJu2BVqsA"
+			]
+		},
+		"contracts/utils/Ownable.sol": {
+			"keccak256": "0xd59b128899fedf27ee038da02a3fc6117a053f2b30addfcd810aac5f4a393d8f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://009a268402fe234e71b8423e804aff869540689bbb7ecd264dc44ac540303afd",
+				"dweb:/ipfs/QmefSkMLTWJsnR91p9wG8EQYiACugufHTGQTwz2UvLKMW7"
+			]
+		}
+	},
+	"version": 1
+}
