@@ -49,3 +49,31 @@ The 8% of total supply equally split between those 900,000 Shiba tokens holders 
 - we will airdrop 10 billion tokens (10,000,000,000) to our token holders, based on the amount held, upon an execution of a function inside teh contract. The airdrop will work in the same manner as the "Initial Airdrop", With the only difference being that this airdrop is based on the amount of <OUR TOKEN> held by the users (instead of Shiba held). The amount received will be limited at <a value to be decided> per user, with a vesting based on the amount received, up to <6 months - to be decided> 
 
  33% of tokens (198,000,000,000,000) - unlocked, we will lock this amount in a liquidity pool, pair with ETH, and give out the LP tokens to some crypto figure 
+
+  
+  ## Contract Addresses Deployed on Ethereum and BSC networks
+  Meme tokens are bridged across Ethereum and BSC networks.
+  
+### BSC TestNet 
+
+Token:  0xB6345f9552B3E1244515BD94820b3954D160cF9B 
+
+https://testnet.bscscan.com/address/0xB6345f9552B3E1244515BD94820b3954D160cF9B 
+
+Bridge: 0x565D9C4Cd87f3a985BF88806020FA8c4F1322B68 
+
+https://testnet.bscscan.com/address/0x565D9C4Cd87f3a985BF88806020FA8c4F1322B68 
+
+#### Airdrop: 0x04bcd565b403a8Ef3623c61D75F31E2cCB46C12A 
+
+https://testnet.bscscan.com/address/0x04bcd565b403a8Ef3623c61D75F31E2cCB46C12A 
+
+### ETH TestNet
+
+Token: 0x5FdBaD1bCDF236A14DCcE96e81B600519ee6D367 
+
+https://rinkeby.etherscan.io/address/0x5FdBaD1bCDF236A14DCcE96e81B600519ee6D367 
+
+Bridge: 0x05339736Ec310946FF2792Ab1d6BA59cFAFc3D43 
+
+https://rinkeby.etherscan.io/address/0x05339736Ec310946FF2792Ab1d6BA59cFAFc3D43 
